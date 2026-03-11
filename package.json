@@ -2,10 +2,13 @@
   "name": "workday",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://subbu-lovely.github.io/Find-Daily-Work",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -29,6 +32,7 @@
     "globals": "^16.5.0",
     "postcss": "^8.5.8",
     "tailwindcss": "^4.2.1",
-    "vite": "^7.3.1"
+    "vite": "^7.3.1",
+    "gh-pages": "^6.1.1"
   }
 }
